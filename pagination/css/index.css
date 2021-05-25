@@ -1,0 +1,57 @@
+:root {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    padding: inherit;
+    margin: inherit;
+    box-sizing: inherit;
+}
+
+.pagination {
+    list-style-type: none;
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+.pagination-previous,
+.pagination-next,
+.pagination-dots,
+.pagination-limit,
+.pagination-current > input {
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.pagination-current > input {
+    width: 4em;
+    height: 4em;
+    text-align: center;
+}
+
+.active {
+    background-color: silver;
+}
+
+.content {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto 10px auto;
+    border: 1px solid black;
+    text-align: center;
+}
