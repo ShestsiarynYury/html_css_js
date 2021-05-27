@@ -12,39 +12,26 @@
     margin: inherit;
 }
 
-.menu-title {
-    padding: 1em;
-    position: absolute;
-    top: 50%;
-    left: 20vw;
-    font-weight: bold;
-    transform: rotate(270deg);
-    background-color: white;
-    text-align: center;
-    border: 1px solid black;
+ul > li {
+    list-style-type: none;
     cursor: pointer;
 }
 
-.menu {
-    position: fixed;
-    top: 0px;
-    left: -20vw;
-    height: 100vh;
-    width: 20vw;
+li:hover {
+    background-color: whitesmoke;
+}
+
+li:hover > ul {
+    display: block;
+}
+
+.container {
     background-color: silver;
-    transition: 0.5s all ease;
-}
-
-.open-left-menu {
-    left: 0vw;
-}
-
-.content {
+    border: 1px solid black;
     margin: 0 auto;
-    width: 90vw;
-    height: 100vh;
-    background-color: white;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    overflow: auto;
+    width: 25vw;
+}
+
+li ul {
+    display: none;
 }
